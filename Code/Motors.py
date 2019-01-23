@@ -27,13 +27,4 @@ def still():
     print("Still...")
     pi.set_servo_pulsewidth(Motors, 1500)
 
-##still()
-##time.sleep(2)
-##forward()
-##time.sleep(2)
-##still()
-##time.sleep(2)
-##backward()
-##time.sleep(2)
-##still()
-##stop()
+
