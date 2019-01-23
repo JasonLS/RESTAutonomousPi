@@ -1,8 +1,8 @@
 import os   
 import time
 
-os.system ("sudo pigpiod") #Launching GPIO library
-time.sleep(1) #needed delay to setup
+#os.system ("sudo pigpiod") #Launching GPIO library
+#time.sleep(1) #needed delay to setup
 import pigpio #GPIO library
 Motors=4
 
