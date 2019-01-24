@@ -2,4 +2,4 @@ Background: We are a group of Highschool students who are intreasted and learnin
 
 We are open to any and all questions, advice and critiques.
 
-if you have any questions, please email me at jsedluk01@gmail.com Author Jason Sedluk @2018
+if you have any questions, please email me at jsedluk01@gmail.com Author Jason Sedluk @2019
