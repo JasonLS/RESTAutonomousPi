@@ -1,6 +1,6 @@
-title: Minimal theme
+title: RESTAutonomousPi
 logo: /assets/img/logo.png
-description: Minimal is a theme for GitHub Pages.
+description: A powerwheels jeep being ran off a Raspberry Pi 3, without any inputs
 show_downloads: true
-google_analytics:
+google_analytics: true
 theme: jekyll-theme-minimal
