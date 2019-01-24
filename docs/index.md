@@ -51,12 +51,12 @@ end
 
 ###### Header 6
 
-| head1        | head two          | three |
-|:-------------|:------------------|:------|
-| ok           | good swedish fish | nice  |
-| out of stock | good and plenty   | nice  |
-| ok           | good `oreos`      | hmm   |
-| ok           | good `zoute` drop | yumm  |
+| TODO         | Progress          | Tested |
+|:-------------|:------------------|:------ |
+| Motors       | Completed         | Works  |
+| Steering     | Completed         | Waiting|
+| Ultrasonics  | In Progress       | TBD    |
+| TBD          | TBD               | TBD    |
 
 ### There's a horizontal rule below this.
 
