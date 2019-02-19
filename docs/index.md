@@ -2,8 +2,13 @@
 layout: default
 ---
 > Teams, Dreams and Memes
+
 # Introduction
 Hello. This is the "RESTAutonomousPi" project where we take a PowerWheels car, reverse engineer it and make a small computer drive it, instead of a small child. Below are code snippets, Due Dates, and other resources we used and compiled so future teams of REST and others could use an autonomous vehicle with a Raspberry Pi. 
+
+We are open to any and all questions, advice and critiques.
+
+if you have any questions, please email me at jsedluk01@gmail.com Author Jason Sedluk @2019
 
 ## Planning
 
