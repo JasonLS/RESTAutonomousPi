@@ -1,12 +1,11 @@
 ---
 layout: default
 ---
-
-# Header 1
-
+> Teams, Dreams and Memes
+# Introduction
 Hello. This is the "RESTAutonomousPi" project where we take a PowerWheels car, reverse engineer it and make a small computer drive it, instead of a small child. Below are code snippets, Due Dates, and other resources we used and compiled so future teams of REST and others could use an autonomous vehicle with a Raspberry Pi. 
 
-## Header 2
+## Planning
 
 | TODO         | Progress          | Tested |
 |:-------------|:------------------|:------ |
@@ -14,16 +13,15 @@ Hello. This is the "RESTAutonomousPi" project where we take a PowerWheels car, r
 | Steering     | Completed         | Works  |
 | Ultrasonics  | In Progress       | TBD    |
 | TBD          | TBD               | TBD    |
-## Header 2
 
-> Teams, Dreams and Memes
 
-### Header 3
+### Code Example
 
 ```py
-// Python code with syntax highlighting.
-def forward()
-  print("Going Forwards")
+//Our Forward Function
+def forward():
+    print("Forward")
+    pi.set_servo_pulsewidth(Motors, 1300)
 ```
 
 
