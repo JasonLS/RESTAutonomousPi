@@ -1,8 +1,8 @@
 import os   
 import time
 
-#os.system ("sudo pigpiod") #Launching GPIO library
-#time.sleep(1) #needed delay to setup
+os.system ("sudo pigpiod") #Launching GPIO library
+time.sleep(1) #needed delay to setup
 import pigpio #GPIO library
 Motors=4
 
@@ -17,11 +17,11 @@ def stop(): #This will stop every action your Pi is performing for ESC ofcourse.
     
 def backward():
     print("Backward")
-    pi.set_servo_pulsewidth(Motors, 1700)     
+    pi.set_servo_pulsewidth(Motors, 1600)     
 
 def forward():
     print("Forward")
-    pi.set_servo_pulsewidth(Motors, 1300)
+    pi.set_servo_pulsewidth(Motors, 1400)
     
 def still():
     print("Still...")
