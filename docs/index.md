@@ -16,21 +16,39 @@ if you have any questions, please email me at jsedluk01@gmail.com Author Jason S
 |:-------------|:------------------|:------ |
 | Motors       | Completed         | Works  |
 | Steering     | Completed         | Works  |
-| Ultrasonics  | In Progress       | TBD    |
-| TBD          | TBD               | TBD    |
+| Ultrasonics  | Completed         | Works  |
+| Pixy         | Completed         | Works  |
+| Line Sensors | Ordering          | N/A    |
 
 
-### Code Example
+### Psuedocode FOr Alpha Tasl
 
 ```py
-//Our Forward Function
-def forward():
-    print("Forward")
-    pi.set_servo_pulsewidth(Motors, 1300)
+//What we need it to do:
+//Drive forward for 3 seconds, then turn right or left
+import functions
+wait 3 seconds before running
+Driveforwad
+wait 3 seconds
+turn right
+stop turning
+Driveforward
+stop driving
+turn off and cleanup
+exit program
 ```
 
 
 ### Lists of Parts and Where We Got Them
 
 * * *
+#### Base Items
+Base Shell: https://amzn.to/2U7uh0P
+RaspberryPi Board (Model B+): https://amzn.to/2Sr8W0q
+7" Display: https://amzn.to/2NupW57
+
+#### Sensors
+Maxbotix HRUSB-MaxSonar: https://bit.ly/2VncRgV
+Pixy2: https://amzn.to/2EdOKu8 
+
 ##WIP and Add images.
