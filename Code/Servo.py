@@ -27,17 +27,21 @@ def SetAngle(angle):
 #    else:
 #        break
 # Testing
-
+Turn_Value = 2 #2 for neautral/straight 1 for left, 3 for right
 def turn_left():
-  print("Left")
-  SetAngle(100)
-
+    if Turn_Value != 1:
+        print("Left")
+        SetAngle(100)
+        Turn_Value =  1
 
 def turn_right():
-  print("Right")
-  SetAngle(200)
-
+    if Turn_Value != 3:
+        print("Right")
+        SetAngle(200)
+        Turn_Value = 3
 
 def stop_turning():
-  print("Stop Turning")
-  SetAngle(150)
+    if Turn_Value != 2:
+        print("Stop Turning")
+        SetAngle(150)
+        Turn_Value = 2
