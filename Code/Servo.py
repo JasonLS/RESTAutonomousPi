@@ -4,30 +4,24 @@ from time import sleep
 GPIO.setmode(GPIO.BCM)
 GPIO.setwarnings(False)
 
-servoPIN = 14
+Servo_Pin = 14
 
-GPIO.setup(servoPIN, GPIO.OUT)
-pwm=GPIO.PWM(servoPIN, 50) #Sets pin 14 at 50Hz
+GPIO.setup(Servo_Pin, GPIO.OUT)
+pwm=GPIO.PWM(Servo_Pin, 50) #Sets pin 14 at 50Hz. Configures GPIO to PWM
 pwm.start(150) #150 = nothing 
 
 
 
-def SetAngle(angle):
+def SetAngle(angle): #Formula for exact angles so it always turns the same degrees left and right.
     duty = angle / 18 + 2
-    GPIO.output(servoPIN, True)
+    GPIO.output(Servo_Pin, True)
     pwm.ChangeDutyCycle(duty)
     sleep(1)
-    GPIO.output(servoPIN, False)
-    pwm.ChangeDutyCycle(0) #Remove this? NO, this makes it so the servo stops turning after 1 second
+    GPIO.output(Servo_Pin, False)
+    pwm.ChangeDutyCycle(0) #Remove this? NO, this makes it so the servo stops turning. Otherwise, it will continue to turn.
 
-#while 1:
-#    val = int(input("Input value: \n"))
-#    if(val > 0):
-#        SetAngle(val)
-#    else:
-#        break
-# Testing
-Turn_Value = 2 #2 for neautral/straight 1 for left, 3 for right
+Turn_Value = 2 #2 for neutral/straight 1 for left, 3 for right
+
 def turn_left():
     if Turn_Value != 1:
         print("Left")
@@ -45,3 +39,18 @@ def stop_turning():
         print("Stop Turning")
         SetAngle(150)
         Turn_Value = 2
+
+def cleanup():
+    print("Exiting Servo...")
+    if Turn_Value == 1:
+        SetAngle(200)
+        print("Back to neutral...")
+
+    elif Turn_Value == 3:
+        SetAngle(100)
+        print("Back to neutral...")   
+
+    elif Turn_Value == 2:
+        print("Back to neutral...")
+
+    GPIO.cleanup()

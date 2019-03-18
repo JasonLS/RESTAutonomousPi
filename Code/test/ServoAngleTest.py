@@ -15,7 +15,7 @@ def SetAngle(angle):
     pwm.ChangeDutyCycle(duty)
     sleep(1)
     GPIO.output(servoPIN, False)
-    pwm.ChangeDutyCycle(0)#Remove this?
+    pwm.ChangeDutyCycle(0)
 
 while 1:
     val = int(input("Input value: \n"))

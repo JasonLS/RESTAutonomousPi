@@ -1,19 +1,20 @@
-From Motors import *
-From Servo import *
+import Motors
+import Servo 
 
-os.system ("sudo pigpiod") #Launching GPIO library needed for motors
-time.sleep(1) #needed delay to setup
+#Stop and GO
+Motors.forward()
+time.sleep(2)
+Servo.turn_left()
+time.sleep(2)
+Servo.stop_turning()
+Motors.still()
+time.sleep(2)
+Servo.turn_right()
+time.sleep(2)
+Servo.stop_turning()
+Motors.still()
+Servo.cleanup()
+Motors.stop()
 
 
-forward()
-time.sleep(2)
-turn_left()
-time.sleep(2)
-stop_turning()
-still()
-time.sleep(2)
-turn_right()
-time.sleep(2)
-stop_turning()
-still()
-stop()
+#Continous
