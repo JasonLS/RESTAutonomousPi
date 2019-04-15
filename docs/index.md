@@ -2,13 +2,12 @@
 layout: default
 ---
 > R.E.S.T club is a forging ground for the tech leaders of tomorrow
-
->                                           -Rasul Mahones (Mentor)
+>                                    -Rasul Mahones (Mentor)
 
 # Introduction
 Hello. This is the "RESTAutonomousPi" project where we take a PowerWheels car, reverse engineer it and make a small computer drive it, instead of a small child. Below are code snippets, Due Dates, and other resources we used and compiled so future teams of REST and others could use an autonomous vehicle with a Raspberry Pi. 
 
-[For videos of our car, outreace or to contact us, please visit](docs/inaction.md)
+[For videos of our car, outreace or to contact us, please visit](inaction.md)
 
 
 ## Planning
