@@ -2,6 +2,7 @@
 layout: default
 ---
 > R.E.S.T club is a forging ground for the tech leaders of tomorrow
+
 >                                           -Rasul Mahones (Mentor)
 
 # Introduction
