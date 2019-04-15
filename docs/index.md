@@ -45,7 +45,7 @@ def forward():
 
 * * *
 #### Base Items
-[Base Shell/Motors:] https://amzn.to/2U7uh0P
+[Base Shell/Motors:] (https://amzn.to/2U7uh0P)
 [RaspberryPi Board (Model B+):] https://amzn.to/2Sr8W0q
 [Proto Board:] https://www.adafruit.com/product/1609
 
