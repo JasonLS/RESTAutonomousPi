@@ -45,16 +45,24 @@ def forward():
 
 * * *
 #### Base Items
-[Base Shell/Motors:](https://amzn.to/2U7uh0P)
-[RaspberryPi Board (Model B+):](https://amzn.to/2Sr8W0q)
-[Proto Board:](https://www.adafruit.com/product/1609)
+Base Shell/Motors: [Powerwheels Jeep](https://amzn.to/2U7uh0P)
+
+Microcomputer Controlling the whole car: [RaspberryPi Board (Model B+)](https://amzn.to/2Sr8W0q)
+
+Wiring connection [Proto Board](https://www.adafruit.com/product/1609)
 
 #### Motors
-Stock Motors
-Motor Controller: https://amzn.to/2IvWJGu
+(Stock Motors)
+
+Motor Controller: [Velineon ESC from R/C car](https://amzn.to/2IvWJGu)
+
 
 #### Sensors
-Maxbotix HRUSB-MaxSonar for people/object detection (x3): https://bit.ly/2VncRgV
-Pixy2 for color detection: https://amzn.to/2EdOKu8 
+Ultrasonic sensors: [Maxbotix HRUSB-MaxSonar(x3)](https://bit.ly/2VncRgV)
+
+Color Tracking Camera: [Pixy2](https://amzn.to/2EdOKu8) 
+
+
+
 
 ##WIP and Add images.
