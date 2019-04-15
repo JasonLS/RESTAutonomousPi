@@ -1,14 +1,14 @@
 ---
 layout: default
 ---
-> Teams, Dreams and Memes
+> R.E.S.T club is a forging ground for the tech leaders of tomorrow
+>                                           -Rasul Mahones (Mentor)
 
 # Introduction
 Hello. This is the "RESTAutonomousPi" project where we take a PowerWheels car, reverse engineer it and make a small computer drive it, instead of a small child. Below are code snippets, Due Dates, and other resources we used and compiled so future teams of REST and others could use an autonomous vehicle with a Raspberry Pi. 
 
-We are open to any and all questions, advice and critiques.
+[For videos of our car, outreace or to contact us, please visit](docs/inaction.md)
 
-if you have any questions, please email me at jsedluk01@gmail.com Author Jason Sedluk @2019
 
 ## Planning
 
@@ -20,6 +20,37 @@ if you have any questions, please email me at jsedluk01@gmail.com Author Jason S
 | Pixy         | Completed         | Works  |
 | Line Sensors | Testing           | ...    |
 
+### Lists of Parts, Where We Got Them, and Why
+
+* * *
+#### Base Items
+Base Shell/Motors: [Powerwheels Jeep](https://amzn.to/2U7uh0P)
+
+Microcomputer Controlling the whole car: [RaspberryPi Board (Model B+)](https://amzn.to/2Sr8W0q)
+
+Wiring connection [Proto Board](https://www.adafruit.com/product/1609)
+
+#### Motors
+(Stock Motors)
+
+Motor Controller: [Velineon ESC from R/C car](https://amzn.to/2IvWJGu)
+
+Servo: [Hitec HS-785HB w/ Gearbox](https://bit.ly/2GqXIX9)
+
+
+#### Sensors
+Ultrasonic sensors(x3): [Maxbotix HRUSB-MaxSonar](https://bit.ly/2VncRgV)
+
+Color Tracking Camera: [Pixy2](https://amzn.to/2EdOKu8) 
+
+Line Tracking Sensors(x4): [Gikfun IR Sensor](https://amzn.to/2v3KFob) 
+
+#### Batteries
+Motor Battery [11.1v, 5A, 4s](https://amzn.to/2ZhBmPt)
+
+Servo Battery [7.4v, 1A, 3s](https://amzn.to/2UZbhoH)
+
+RaspberryPi/LCD Battery [Any long lasting portable charger will do](https://amzn.to/2VH4UDL)
 
 ### Using PiGPIO for our Motors with forward function example.
 
@@ -40,29 +71,7 @@ def forward():
     
 ```
 
+### Issues
+Problem: Motors would "jerk" forwards when turning the servo
+Solution: Instead of powering the servo through the ESC, we powered it seperately through a LiPo
 
-### Lists of Parts, Where We Got Them, and Why
-
-* * *
-#### Base Items
-Base Shell/Motors: [Powerwheels Jeep](https://amzn.to/2U7uh0P)
-
-Microcomputer Controlling the whole car: [RaspberryPi Board (Model B+)](https://amzn.to/2Sr8W0q)
-
-Wiring connection [Proto Board](https://www.adafruit.com/product/1609)
-
-#### Motors
-(Stock Motors)
-
-Motor Controller: [Velineon ESC from R/C car](https://amzn.to/2IvWJGu)
-
-
-#### Sensors
-Ultrasonic sensors: [Maxbotix HRUSB-MaxSonar(x3)](https://bit.ly/2VncRgV)
-
-Color Tracking Camera: [Pixy2](https://amzn.to/2EdOKu8) 
-
-
-
-
-##WIP and Add images.
