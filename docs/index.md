@@ -34,6 +34,11 @@ Motor Controller: [Velineon ESC from R/C car](https://amzn.to/2IvWJGu)
 
 Servo: [Hitec HS-785HB w/ Gearbox](https://bit.ly/2GqXIX9)
 
+The stock motors on the PowerWheels worked fine for us. We didn't need to go that fast and 12v at 10Amps was enough for us to handle.
+
+The servo motor we got is a continous servo motor meaning that it has no base position and will keep on turning in either direction based on the PWM signal recieved. We had issues in the past not getting enough torque to move the front wheels right or left, so we decided to be able to keep turning the servo to avoid that issue
+
+We know our ESC is over rated for what we are doing. The ESC we have is rated for a whopping 320A peak current and 200A continous. The reason we are using this ESC is because our Mini IVD team's R/C car uses these ESC
 
 #### Sensors
 Ultrasonic sensors(x3): [Maxbotix HRUSB-MaxSonar](https://bit.ly/2VncRgV)
