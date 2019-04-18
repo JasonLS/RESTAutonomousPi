@@ -8,7 +8,7 @@ Servo_Pin = 14
 
 GPIO.setup(Servo_Pin, GPIO.OUT)
 pwm=GPIO.PWM(Servo_Pin, 50) #Sets pin 14 at 50Hz. Configures GPIO to PWM
-pwm.start(10) #150 = nothing 
+pwm.start(0) #150 = nothing 
 
 
 
@@ -27,7 +27,7 @@ def turn_left():
     global Turn_Value
     if Turn_Value != 1:
         print("Left")
-        SetAngle(100)
+        SetAngle(1)
         Turn_Value =  1
 
 def turn_right():
@@ -37,6 +37,8 @@ def turn_right():
         print("Right")
         SetAngle(200)
         Turn_Value = 3
+
+    
 
 def center():
     global Turn_Value
@@ -67,3 +69,5 @@ def cleanup():
         print("Back to neutral...")
 
     GPIO.cleanup()
+
+test()

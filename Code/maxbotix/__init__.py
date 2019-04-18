@@ -18,13 +18,14 @@ import serial
 import threading
 
 class _MaxBotix(object):
-
+    
     def __init__(self, port, baud):
 
         self._device = serial.Serial(port, baud)
         self._digits = ''
         self._running = False
         self._ready = False
+        
         
 
     def _update(self, _ignore):
