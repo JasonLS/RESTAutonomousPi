@@ -1,16 +1,19 @@
-import oof
+import Ultrasonic
 import time
-SerialPort1 = '/dev/ttyUSB2'
+SerialPort1 = '/dev/ttyUSB0'
 SerialPort2 = '/dev/ttyUSB1' # run ls/dev/tty* to see which usb ports it is connected to.  
+SerialPort3 = '/dev/ttyUSB2'
 
-LeftSensor = oof.MySensor(SerialPort1)
-RightSensor = oof.MySensor(SerialPort2)
+LeftSensor = Ultrasonic.MySensor(SerialPort1)
+CenterSensor = Ultrasonic.MySensor(SerialPort2)
+RightSensor = Ultrasonic.MySensor(SerialPort3)
 
 LeftSensor.start()
+CenterSensor.start()
 RightSensor.start()
 
 while 1 : 
-    print('Left Sensor ', LeftSensor.getLastEvent(), '\t Right Sensor ', RightSensor.getLastEvent())
+    print('Left Sensor ', LeftSensor.getLastEvent(), '\t Center Sensor ', CenterSensor.getLastEvent(), '\t Right Sensor ', RightSensor.getLastEvent())
     time.sleep(1)
-#call .stop() for cleanup
-
+    
+# sensor.stop stops the reading. 

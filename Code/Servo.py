@@ -70,4 +70,3 @@ def cleanup():
 
     GPIO.cleanup()
 
-test()

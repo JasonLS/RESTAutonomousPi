@@ -13,7 +13,7 @@ class MySensor(USB_ProxSonar):
 
     def __init__(self, port):
         
-        self.data = [1,2,3,4,5,6,7,8,9]
+        self.data = [1,2,3,4,5,6,7,8,5000]
         USB_ProxSonar.__init__(self, port)
          
    
@@ -23,6 +23,7 @@ class MySensor(USB_ProxSonar):
         
         self.data.append(distanceMillimeters)
         self.data.pop(0)
+
     def getLastEvent(self):
         return self.data[8]
 
