@@ -1,7 +1,7 @@
 import Ultrasonic
 import time
-SerialPort1 = '/dev/ttyUSB0'
-SerialPort2 = '/dev/ttyUSB1' # run ls/dev/tty* to see which usb ports it is connected to.  
+SerialPort1 = '/dev/ttyUSB0' # Type ls/dev/tty in the terminal then tab to see which usb ports are connected be default, 0-2 will be for US. 
+SerialPort2 = '/dev/ttyUSB1'  
 SerialPort3 = '/dev/ttyUSB2'
 
 LeftSensor = Ultrasonic.MySensor(SerialPort1)

@@ -1,7 +1,8 @@
 import Motors
 import Servo 
 
-#Stop and GO
+#Go Forward for 4 seconds then turn right and keep going
+#then stop
 Motors.forward()
 time.sleep(2)
 Servo.turn_left()
@@ -17,4 +18,3 @@ Servo.cleanup()
 Motors.stop()
 
 
-#Continous

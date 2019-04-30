@@ -25,6 +25,7 @@ Turn_Value = 2
 
 def turn_left():
     global Turn_Value
+    
     if Turn_Value != 1:
         print("Left")
         SetAngle(1)
