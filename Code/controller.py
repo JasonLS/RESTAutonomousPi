@@ -35,7 +35,7 @@ RY = 5
 
 #creates object 'gamepad' to store the data
 #you can call it whatever you like
-gamepad = InputDevice('/dev/input/event4')
+gamepad = InputDevice('/dev/input/event0') #Change this if keyboard or mouse plugged in
 print(gamepad)
 
 for event in gamepad.read_loop():
@@ -44,6 +44,7 @@ for event in gamepad.read_loop():
         if event.value == 0:
             if event.code == LX:
                 print("leftstick left")
+                Servo.turn_left()
             elif event.code == LY:
                 print("leftstick up")
             elif event.code == RX:
@@ -55,6 +56,7 @@ for event in gamepad.read_loop():
         elif event.value == 255:
             if event.code == LX:
                 print("leftstick right")
+                Servo.turn_right()
             elif event.code == LY:
                 print("leftstick down")
             elif event.code == RX:
@@ -84,7 +86,7 @@ for event in gamepad.read_loop():
                   
             elif event.code == A:
                print("A")
-               os.system("python re.py")
+               #os.system("python test.py")
             elif event.code == X:
                 print("X")
 
@@ -105,9 +107,11 @@ for event in gamepad.read_loop():
                 print("left bumper")
 
             elif event.code == LT:
-                print("right trigger")
-            elif event.code == RT:
                 print("left trigger")
+                Motors.forward()
+            elif event.code == RT:
+                print("right trigger")
+                Motors.backward()
 
 
 

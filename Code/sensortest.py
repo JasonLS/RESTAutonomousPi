@@ -16,4 +16,4 @@ while 1 :
     print('Left Sensor ', LeftSensor.getLastEvent(), '\t Center Sensor ', CenterSensor.getLastEvent(), '\t Right Sensor ', RightSensor.getLastEvent())
     time.sleep(1)
     
-# sensor.stop stops the reading. 
+# LeftSensor.stop stops the reading for the Left Sensor
