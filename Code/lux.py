@@ -1,52 +1,42 @@
+import time
 import board
 import busio
-import adafruit_tsl2561
- 
-# Create the I2C bus
+import adafruit_tsl2591
+
+# Initialize the I2C bus.
 i2c = busio.I2C(board.SCL, board.SDA)
- 
-# Create the TSL2561 instance, passing in the I2C bus
-tsl = adafruit_tsl2561.TSL2561(i2c)
- 
-# Print chip info
-print("Chip ID = {}".format(tsl.chip_id))
-print("Enabled = {}".format(tsl.enabled))
-print("Gain = {}".format(tsl.gain))
-print("Integration time = {}".format(tsl.integration_time))
- 
-print("Configuring TSL2561...")
- 
-# Enable the light sensor
-tsl.enabled = True
- 
-# Set gain 0=1x, 1=16x
-tsl.gain = 0
- 
-# Set integration time (0=13.7ms, 1=101ms, 2=402ms, or 3=manual)
-tsl.integration_time = 1
- 
-print("Getting readings...")
- 
-# Get raw (luminosity) readings individually
-broadband = tsl.broadband
-infrared = tsl.infrared
- 
-# Get raw (luminosity) readings using tuple unpacking
-#broadband, infrared = tsl.luminosity
- 
-# Get computed lux value (tsl.lux can return None or a float)
-lux = tsl.lux
- 
-# Print results
-print("Enabled = {}".format(tsl.enabled))
-print("Gain = {}".format(tsl.gain))
-print("Integration time = {}".format(tsl.integration_time))
-print("Broadband = {}".format(broadband))
-print("Infrared = {}".format(infrared))
-if lux is not None:
-    print("Lux = {}".format(lux))
-else:
-    print("Lux value is None. Possible sensor underrange or overrange.")
- 
-# Disble the light sensor (to save power)
-tsl.enabled = False
+
+# Initialize the sensor.
+sensor = adafruit_tsl2591.TSL2591(i2c)
+sensor.gain = adafruit_tsl2591.GAIN_LOW #(1x gain)
+#sensor.gain = adafruit_tsl2591.GAIN_MED (25x gain, the default)
+#sensor.gain = adafruit_tsl2591.GAIN_HIGH (428x gain)
+#sensor.gain = adafruit_tsl2591.GAIN_MAX (9876x gain)
+#sensor.integration_time = adafruit_tsl2591.INTEGRATIONTIME_100MS (100ms, default)
+#sensor.integration_time = adafruit_tsl2591.INTEGRATIONTIME_200MS (200ms)
+#sensor.integration_time = adafruit_tsl2591.INTEGRATIONTIME_300MS (300ms)
+#sensor.integration_time = adafruit_tsl2591.INTEGRATIONTIME_400MS (400ms)
+#sensor.integration_time = adafruit_tsl2591.INTEGRATIONTIME_500MS (500ms)
+#sensor.integration_time = adafruit_tsl2591.INTEGRATIONTIME_600MS (600ms)
+
+while True:
+    #lux = sensor.lux
+    #print('Total light: {0}lux'.format(lux))
+    # You can also read the raw infrared and visible light levels.
+    # These are unsigned, the higher the number the more light of that type.
+    # There are no units like lux.
+    # Infrared levels range from 0-65535 (16-bit)
+    #infrared = sensor.infrared
+    #print('Infrared light: {0}'.format(infrared))
+    # Visible-only levels range from 0-2147483647 (32-bit)
+    visible = sensor.visible
+    #print('Visible light: {0}'.format(visible))
+    if visible >= 300000:
+        print("high")
+    else:
+        print("low")
+    time.sleep(1)
+    # Full spectrum (visible + IR) also range from 0-2147483647 (32-bit)
+    #full_spectrum = sensor.full_spectrum
+    #print('Full spectrum (IR + visible) light: {0}'.format(full_spectrum))
+    #time.sleep(1.0)
