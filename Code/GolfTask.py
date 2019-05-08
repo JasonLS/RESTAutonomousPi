@@ -1,6 +1,8 @@
 import pixy 
 from ctypes import *
 from pixy import *
+import Motors
+import Servo
 
 # Pixy2 Python SWIG get blocks example #
 
@@ -21,8 +23,9 @@ class Blocks (Structure):
 
 blocks = BlockArray(100)
 frame = 0
-
+Motors.still()
 while 1:
+  Motors.forward()
   count = pixy.ccc_get_blocks (100, blocks)
 
   if count > 0:
@@ -32,10 +35,13 @@ while 1:
       #print '[BLOCK: SIG=%d X=%3d Y=%3d WIDTH=%3d HEIGHT=%3d]' % (blocks[index].m_signature, blocks[index].m_x, blocks[index].m_y, blocks[index].m_width, blocks[index].m_height)
       if blocks[index].m_x >= 200:
         print("right")
+        Servo.turn_right()
       elif blocks[index].m_x <= 100:
         print("left")
+        Servo.turn_left()
       elif blocks[index].m_x >= 100 and blocks[index].m_x <= 200:
         print("center")
+        Servo.center()
 
 
       
