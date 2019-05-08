@@ -2,6 +2,7 @@ import Motors
 import Servo
 import Ultrasonic
 import time
+import os
 
 #Teams are challenged to autonomously parallel park their vehicles.. The
 #parking spot will be 1.8 meters by 1.1 meters. The other spots will have vehicles
@@ -25,6 +26,8 @@ LeftSensor.start()
 CenterSensor.start()
 RightSensor.start()
 Motors.still()
+
+os.system("flite -t 'Delta Task started'")
 
 while 1 : 
     #print('Left Sensor ', LeftSensor.getLastEvent(), '\t Center Sensor ', CenterSensor.getLastEvent(), '\t Right Sensor ', RightSensor.getLastEvent())

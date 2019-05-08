@@ -2,6 +2,7 @@ import Motors
 import Servo
 import Ultrasonic
 import time
+import os
 
 #Autonomous Obstacle Sensitivity Vehicle should move forward until it senses an
 #obstacle (such as a team member, or judge) and stops. The obstacle will move into the
@@ -13,6 +14,7 @@ SerialPort1 = '/dev/ttyUSB0'
 
 FrontSensor = Ultrasonic.MySensor(SerialPort1)
 FrontSensor.start()
+os.system("flite -t 'Bravo Task started'")
 
 while FrontSensor.getLastEvent() >= 3000: #3000 millimeters
     print(FrontSensor.getLastEvent())

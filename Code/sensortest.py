@@ -5,8 +5,8 @@ SerialPort2 = '/dev/ttyUSB1'
 SerialPort3 = '/dev/ttyUSB2'
 
 LeftSensor = Ultrasonic.MySensor(SerialPort1)
-CenterSensor = Ultrasonic.MySensor(SerialPort2)
-RightSensor = Ultrasonic.MySensor(SerialPort3)
+CenterSensor = Ultrasonic.MySensor(SerialPort3)
+RightSensor = Ultrasonic.MySensor(SerialPort2)
 
 LeftSensor.start()
 CenterSensor.start()

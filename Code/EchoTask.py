@@ -1,5 +1,7 @@
 import Motors
-import lux
+from lux import *
+import time
+import os
 #impoer Ultrasonic
 
 #The team’s Autonomous IVD vehicle should demonstrate its awareness and
@@ -8,22 +10,25 @@ import lux
 #it is within a parking garage, stop and flash its lights. When the door is opened at the
 #other end it continues on the way.
 
-while True:
-    #lux = sensor.lux
+#while True:
     # Visible-only levels range from 0-2147483647 (32-bit)
-    visible = lux.sensor.visible
     #print('Visible light: {0}'.format(visible))
-    if visible >= 300000:
-        print("high")
-    else:
-        print("low")
-    time.sleep(1)
+#    if visible >= 300000:
+#        print("high")
+#    else:
+#        print("low")
+#    time.sleep(1)
+sensor.gain = adafruit_tsl2591.GAIN_LOW
 
-#while visible >= 300000:
-#	Motors.forward()
-#	if visible <= 300000:
-#		time.sleep(3)
-#		Motors.still()
-		#Cue
-#	else:
-#		pass
+os.system("flite -t 'Echo Task started'")
+time.sleep(2)
+while 1:
+    Motors.forward()
+    visible = sensor.visible
+    if visible <= 300000:
+            #time.sleep(3)
+            Motors.still()
+            os.system("flite -t 'Its to fucking dark'")
+            #Cue
+    else:
+            pass

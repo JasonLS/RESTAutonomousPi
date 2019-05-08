@@ -1,6 +1,7 @@
 import RPi.GPIO as GPIO
 import Motors
 import Servo
+import os
 
 #Highly reflective tape will be used to define lanes (of proportional accuracy to the
 #vehicle and real world). The course will include approximately 3-5 meters of straightaway
@@ -13,6 +14,8 @@ GPIO.setup(26, GPIO.IN) #Left
 
 GPIO.setwarnings(False)
 still()
+
+os.system("flite -t 'Charlie Task Started'")
 
 #Test First
 while GPIO.input(26) and GPIO.input(20) != 1:
