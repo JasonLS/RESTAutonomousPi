@@ -13,11 +13,11 @@ pi.set_servo_pulsewidth(Motor_Pin, 0) #Sets a neutral pulse to motors telling it
     
 def backward():	 
     print("Backward")
-    pi.set_servo_pulsewidth(Motor_Pin, 1600)     
+    pi.set_servo_pulsewidth(Motor_Pin, 1800)     
 
 def forward():
     print("Forward")
-    pi.set_servo_pulsewidth(Motor_Pin, 1400)
+    pi.set_servo_pulsewidth(Motor_Pin, 1200)
     
 def still(): 
     print("Still...")

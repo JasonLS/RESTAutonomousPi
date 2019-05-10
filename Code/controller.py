@@ -4,8 +4,8 @@ import Servo
 import Ultrasonic
 import os
 
-LT=310
-RT=311
+LT=312
+RT=313
 LB=308
 RB=309
 LR=16
@@ -14,12 +14,12 @@ A=306
 X=307
 Y=304
 B=305
-START=313
-SEL=312
+START=319
+SEL=319
 
 HOME=316
-LS=314
-RS=315
+LS=317
+RS=318
 
 LX = 0
 LY = 1
@@ -29,13 +29,13 @@ down = 32
 left = 18
 right = 33
 
-RX = 2
-RY = 5
+RX = 9
+RY = 9
 
 
 #creates object 'gamepad' to store the data
 #you can call it whatever you like
-gamepad = InputDevice('/dev/input/event0') #Change this if keyboard or mouse plugged in
+gamepad = InputDevice('/dev/input/event2') #Change this if keyboard or mouse plugged in
 print(gamepad)
 
 for event in gamepad.read_loop():
@@ -98,8 +98,10 @@ for event in gamepad.read_loop():
                 print("home")
             elif event.code == LS:
                 print("Left Click")
+                Servo.center()
             elif event.code == RS:
                 print("Right Click")
+                Motors.still()
 
             elif event.code == RB:
                 print("right bumper")
@@ -108,10 +110,13 @@ for event in gamepad.read_loop():
 
             elif event.code == LT:
                 print("left trigger")
-                Motors.forward()
+                Motors.backward()
+
             elif event.code == RT:
                 print("right trigger")
-                Motors.backward()
+                Motors.forward()
+                
+
 
 
 

@@ -29,29 +29,29 @@ Motors.still()
 
 os.system("flite -t 'Delta Task started'")
 
-while 1 : 
+while 1 :
+    
     #print('Left Sensor ', LeftSensor.getLastEvent(), '\t Center Sensor ', CenterSensor.getLastEvent(), '\t Right Sensor ', RightSensor.getLastEvent())
     #time.sleep(1)
-    if LeftSensor.getLastEvent() <= 1000:
-        print("Forward Detect")
+    Motors.forward()
+    if LeftSensor.getLastEvent() >= 500 and RightSensor.getLastEvent() >= 500:
+        #Execute ppark
+        Motors.still()
         Motors.forward()
-        if LeftSensor.getLastEvent() <= 1000 and RightSensor.getLastEvent() >= 1000:
-            #Execute ppark
-            Motors.still()
-            Motors.forward()
-            time.sleep(1)
-            Motors.still()
-            Servo.turn_left()
-            Motors.backward()
-            time.sleep(1)
-            Servo.center()
-            Servo.turn_right()
-            Motors.backward()
-            time.sleep(.5)
-            Motors.still()
-            Motors.forward()
-            time.sleep(.5)
-            Motors.still()
+        time.sleep(1)
+        Motors.still()
+        Servo.turn_left()
+        Motors.backward()
+        time.sleep(3)
+        Servo.center()
+        Servo.turn_right()
+        Motors.backward()
+        time.sleep(2)
+        Motors.still()
+        Motors.forward()
+        time.sleep(2)
+        Motors.still()
+        Servo.center()
             
         
 ##    if LeftSensor.getLastEvent() and RightSensor.getLastEvent() <= 1000:
