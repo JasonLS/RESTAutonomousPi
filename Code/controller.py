@@ -52,6 +52,8 @@ for event in gamepad.read_loop():
             elif event.code == RY:
                 print("rightstick up")
                 
+        elif event.code == LX or LY and event.value != 0 or 255:
+        	Servo.center()
 
         elif event.value == 255:
             if event.code == LX:

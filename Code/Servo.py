@@ -26,7 +26,7 @@ Turn_Value = 2
 def turn_left():
     global Turn_Value
     
-    if Turn_Value != 1:
+    if Turn_Value != 1 and Turn_Value != 3:
         print("Left")
         SetAngle(1)
         Turn_Value =  1
@@ -34,7 +34,7 @@ def turn_left():
 def turn_right():
     global Turn_Value
     
-    if Turn_Value != 3:
+    if Turn_Value != 3 and Turn_Value != 1:
         print("Right")
         SetAngle(200)
         Turn_Value = 3

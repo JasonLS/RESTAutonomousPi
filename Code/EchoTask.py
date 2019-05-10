@@ -28,7 +28,7 @@ while 1:
     if visible <= 300000:
             #time.sleep(3)
             Motors.still()
-            os.system("flite -t 'Its to fucking dark'")
+            os.system("flite -t 'Its too dark'")
             #Cue
-    else:
-            pass
+
+

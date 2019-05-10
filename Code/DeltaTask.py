@@ -52,6 +52,8 @@ while 1 :
         time.sleep(2)
         Motors.still()
         Servo.center()
+        os.system("flite -t 'Delta Task ended'")
+
             
         
 ##    if LeftSensor.getLastEvent() and RightSensor.getLastEvent() <= 1000:

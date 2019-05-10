@@ -21,6 +21,7 @@ while FrontSensor.getLastEvent() >= 3000: #3000 millimeters
     Motors.forward()
     if FrontSensor.getLastEvent() <= 3000:
         Motors.still()
+        os.system("flite -t 'Bravo Task ended'")
 
     #Avoid and keep going
     #if FrontSensor.getLastEvent() <= 3000:
