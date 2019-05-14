@@ -9,13 +9,13 @@ Hello. This is the "RESTAutonomousPi" project where we take a PowerWheels car, r
 
 ## Planning
 
-| TODO         | Progress          | Tested |
-|:-------------|:------------------|:------ |
-| Motors       | Completed         | Works  |
-| Steering     | Completed         | Works  |
-| Ultrasonics  | Completed         | Works  |
-| Pixy         | Completed         | Works  |
-| Line Sensors | Testing           | ...    |
+| TO DO        | Progress          | 
+|:-------------|:------------------|
+| Motors       | Completed         | 
+| Steering     | Completed         | 
+| Ultrasonics  | Completed         | 
+| Pixy         | Completed         | 
+| Line Sensors | Needs Testing     | 
 
 ### Lists of Parts, Where We Got Them, and Why
 
@@ -45,7 +45,9 @@ Ultrasonic sensors(x3): [Maxbotix HRUSB-MaxSonar](https://bit.ly/2VncRgV)
 
 Color Tracking Camera: [Pixy2](https://amzn.to/2EdOKu8) 
 
-Line Tracking Sensors(x4): [Gikfun IR Sensor](https://amzn.to/2v3KFob) 
+Line Tracking Sensors(x4): [Gikfun IR Sensor](https://amzn.to/2v3KFob)
+
+Light Sensor: [Adafruit Lux Sensor](https://www.adafruit.com/product/1980?gclid=EAIaIQobChMI3qjvoKCb4gIVl7jACh12_AOKEAQYAiABEgKQOfD_BwE)
 
 #### Batteries
 Motor Battery [11.1v, 5A, 4s](https://amzn.to/2ZhBmPt)
