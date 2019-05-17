@@ -17,6 +17,11 @@ Hello. This is the "RESTAutonomousPi" project where we take a PowerWheels car, r
 | Pixy         | Completed         | 
 | Line Sensors | Needs Testing     | 
 
+## Data Gathering
+Using a Beaglebone Black as our webserver, we used Influxdb as the database for all the data our ultrasonics and GPS reads and can display the speed of the vehicle as well. We use Grafana to display that data and chart it. Below is an example from when we were doing testing. 
+
+<img src="docs/GPSdata.png" alt="hi" class="inline"/>
+
 ### Lists of Parts, Where We Got Them, and Why
 
 * * *
