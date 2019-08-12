@@ -1,8 +1,11 @@
 ---
 layout: default
 ---
-> R.E.S.T club is a forging ground for the tech leaders of tomorrow                 
+> R.E.S.T club is a forging ground for the tech leaders of tomorrow.                 
     -Rasul Mahones (Mentor)
+
+> There is no better way to learn, than from your own mistakes. 
+    -Jason Sedluk (Project Leader)
 
 # Introduction
 Hello. This is the "RESTAutonomousPi" project where we take a PowerWheels car, reverse engineer it and make a small computer drive it, instead of a small child. Below are code snippets, Due Dates, and other resources we used and compiled so future teams of REST and others could use an autonomous vehicle with a Raspberry Pi. 
