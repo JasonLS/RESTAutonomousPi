@@ -1,10 +1,12 @@
 ---
 layout: default
 ---
-> R.E.S.T club is a forging ground for the tech leaders of tomorrow.                 
+> R.E.S.T club is a forging ground for the tech leaders of tomorrow. 
+
     -Rasul Mahones (Mentor)
 
-> There is no better way to learn, than from your own mistakes. 
+> There is no better way to learn, than from your own mistakes.
+
     -Jason Sedluk (Project Leader)
 
 # Introduction
@@ -23,7 +25,9 @@ Hello. This is the "RESTAutonomousPi" project where we take a PowerWheels car, r
 ## Data Gathering
 Using a Beaglebone Black as our webserver, we used Influxdb as the database for all the data our ultrasonics and GPS reads and can display the speed of the vehicle as well. We use Grafana to display that data and chart it. Below is an example from when we were doing testing. 
 
-![BeagleBone Displaying Data from Pi](https://github.com/JasonLS/RESTAutonomousPi/blob/master/docs/GPSdata.png)
+<p>
+    <img src="docs/GPSdata.png" width="220" height="240" />
+</p>
 
 ### Lists of Parts, Where We Got Them, and Why
 
