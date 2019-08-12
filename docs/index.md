@@ -22,7 +22,7 @@ Using a Beaglebone Black as our webserver, we used Influxdb as the database for 
 
 ![BeagleBone Displaying Data from Pi](https://github.com/JasonLS/RESTAutonomousPi/blob/master/docs/GPSdata.png)
 
-<img src="docs/GPSdata.png" alt="hii" class="inline"/>
+<img src="blob/master/docs/GPSdata.png" alt="hii" class="inline"/>
 
 ### Lists of Parts, Where We Got Them, and Why
 
