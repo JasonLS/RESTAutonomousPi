@@ -8,9 +8,9 @@ time.sleep(1) #needed delay to setup
 
 Motor_Pin = 4 #sets motor pin to pin 4 on BCM, physical pin 5
 
-Motors = pigpio.pi(); #SHortcut naming
-pi.set_servo_pulsewidth(Motor_Pin, 0) #Sets a neutral pulse to motors telling it to get ready for communication
-    
+Motors = pigpio.pi() #SHortcut naming
+Motors.set_servo_pulsewidth(Motor_Pin, 0) #Sets a neutral pulse to motors telling it to get ready for communication
+
 def forward():
     print("Forward")
     Motors.set_servo_pulsewidth(Motor_Pin, 1350)

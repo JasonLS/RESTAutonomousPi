@@ -1,8 +1,10 @@
 import Motors
-from lux import *
+import lux 
 import time
 import os
-#impoer Ultrasonic
+import sys
+# insert at 1, 0 is the script path (or '' in REPL)
+sys.path.insert(1, '/Code/sensors/')
 
 #The team’s Autonomous IVD vehicle should demonstrate its awareness and
 #attentiveness to its surroundings. The vehicle will completely enter a darkened
@@ -25,7 +27,7 @@ time.sleep(2)
 while 1:
     Motors.forward()
     visible = sensor.visible
-    if visible <= 300000:
+    if visible <= 300 * 1000:
             #time.sleep(3)
             Motors.still()
             os.system("flite -t 'Its too dark'")
