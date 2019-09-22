@@ -19,8 +19,8 @@ sensor.gain = adafruit_tsl2591.GAIN_LOW #(1x gain)
 #sensor.integration_time = adafruit_tsl2591.INTEGRATIONTIME_500MS (500ms)
 #sensor.integration_time = adafruit_tsl2591.INTEGRATIONTIME_600MS (600ms)
 
-#while True:
-    #lux = sensor.lux
+while True:
+    lux = sensor.lux
     #print('Total light: {0}lux'.format(lux))
     # You can also read the raw infrared and visible light levels.
     # These are unsigned, the higher the number the more light of that type.
@@ -29,8 +29,8 @@ sensor.gain = adafruit_tsl2591.GAIN_LOW #(1x gain)
     #infrared = sensor.infrared
     #print('Infrared light: {0}'.format(infrared))
     # Visible-only levels range from 0-2147483647 (32-bit)
-    #visible = sensor.visible
-    #print('Visible light: {0}'.format(visible))
+    visible = sensor.visible
+    print('Visible light: {0}'.format(visible))
     #if visible >= 300000:
     #    print("high")
     #else:

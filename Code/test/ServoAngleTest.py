@@ -2,7 +2,7 @@ import RPi.GPIO as GPIO
 from time import sleep
 GPIO.setmode(GPIO.BCM)
 GPIO.setwarnings(False)
-servoPIN = 14
+servoPIN = 4
 GPIO.setup(servoPIN, GPIO.OUT)
 pwm=GPIO.PWM(servoPIN, 50)
 pwm.start(0)
