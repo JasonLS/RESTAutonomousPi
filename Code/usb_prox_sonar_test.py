@@ -16,7 +16,7 @@ GNU General Public License for more details.
 '''
 
 
-PORT = '/dev/ttyUSB0' 	                  # Linux
+PORT = '/dev/ttyUSB1'                     # Linux
 #PORT =  '/dev/tty.usbserial-MBWF8BI2'    # Mac OS X (Darwin)
 #PORT =  'COM8'                           # Windows
 
