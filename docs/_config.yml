@@ -1,6 +1,6 @@
 title: RESTAutonomousPi
 logo: thumbnail.png
-description: A powerwheels jeep being ran off a Raspberry Pi 3, without any inputs
+description: A power wheels jeep being controlled by a Raspberry Pi 3 instead of a young child in order to experiment with autonomous technology for the #SquareOneEducation AIVD competition
 show_downloads: true
 google_analytics: true
 theme: jekyll-theme-minimal
