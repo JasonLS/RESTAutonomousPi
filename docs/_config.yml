@@ -1,6 +1,6 @@
 title: RESTAutonomousPi
 logo: thumbnail.png
-description: A power wheels jeep being controlled by a Raspberry Pi 3 instead of a young child in order to experiment with autonomous technology for the SquareOneEducation AIVD competition
+description: A power wheels jeep being controlled by a Raspberry Pi 3 instead of a young child in order to experiment with autonomous technology for the SquareOneEducation AIVD competition. More info about the competition at http://www.squareonenetwork.org/autonomous/
 show_downloads: true
 google_analytics: true
 theme: jekyll-theme-minimal
