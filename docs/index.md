@@ -91,3 +91,5 @@ def forward():
 Problem: Motors would "jerk" forwards when turning the servo
 Solution: Instead of powering the servo through the ESC, we powered it seperately through a LiPo
 
+Problem: Team communication and playing the "Blame Game"
+Solution: We had a talk with a old mentor and with his help, we cleared our differences and organized all our resources and made our club more prefessional with a logo redesign and using the Slack app to facilitate conversation. 
